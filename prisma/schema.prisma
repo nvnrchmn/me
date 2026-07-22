@@ -1,0 +1,97 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Profile {
+  id                String   @id @default(cuid())
+  name              String
+  tagline           String
+  shortBio          String   @db.Text
+  fullBio           String   @db.Text
+  cvUrl             String?
+  yearsOfExperience String
+  projectsCompleted String
+  happyClients      String
+  email             String
+  github            String
+  linkedin          String
+  twitter           String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model Experience {
+  id          String   @id @default(cuid())
+  role        String
+  company     String
+  period      String
+  description String   @db.Text
+  highlights  Json     // Array of strings
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model SkillCategory {
+  id        String      @id @default(cuid())
+  name      String      @unique
+  items     SkillItem[]
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+model SkillItem {
+  id         String        @id @default(cuid())
+  name       String
+  categoryId String
+  category   SkillCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  category    String
+  description String   @db.Text
+  techStack   Json     // Array of strings
+  image       String?
+  demoUrl     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Setting {
+  key       String   @id
+  value     String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Visitor {
+  id        String   @id @default(cuid())
+  ip        String
+  userAgent String?  @db.Text
+  country   String?
+  region    String?  // Provinsi
+  city      String?
+  lat       Float?   // Koordinat Lintang
+  lon       Float?   // Koordinat Bujur
+  isp       String?  // Provider internet
+  path      String?  // URL yang dikunjungi pertama kali
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Nova Nurachman",
+  "tagline": "Solo Developer & Founder of Logikraf",
+  "shortBio": "Building digital experiences that matter with modern web technologies.",
+  "fullBio": "I am a passionate Solo Developer and the Founder of Logikraf. I specialize in building robust, high-performance web applications and digital experiences using modern technologies like Next.js, TypeScript, and Tailwind CSS. With a keen eye for design and a strong foundation in software engineering, I bridge the gap between aesthetics and functionality.",
+  "cvUrl": "/dummy-cv.pdf",
+  "stats": {
+    "yearsOfExperience": "4+",
+    "projectsCompleted": "20+",
+    "happyClients": "15+"
+  },
+  "contact": {
+    "email": "hello@novanurachman.my.id",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "twitter": "https://twitter.com"
+  }
+}

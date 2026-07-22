@@ -1,0 +1,24 @@
+[
+  {
+    "id": "exp-1",
+    "role": "Founder & Solo Developer",
+    "company": "Logikraf",
+    "period": "2020 - Present",
+    "description": "Building digital products, web applications, and providing technical consultancy.",
+    "highlights": [
+      "Developed comprehensive ERP solutions",
+      "Architected scalable infrastructure for various clients"
+    ]
+  },
+  {
+    "id": "exp-2",
+    "role": "Senior Frontend Engineer",
+    "company": "Tech Startup Inc",
+    "period": "2018 - 2020",
+    "description": "Led the frontend development team in building a SaaS platform.",
+    "highlights": [
+      "Migrated legacy codebase to React",
+      "Improved performance by 40%"
+    ]
+  }
+]

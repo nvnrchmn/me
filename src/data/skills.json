@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Frontend",
+    "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Zustand"]
+  },
+  {
+    "category": "Backend",
+    "items": ["Node.js", "Express", "Prisma", "PostgreSQL", "REST APIs", "GraphQL"]
+  },
+  {
+    "category": "DevOps & Infra",
+    "items": ["Docker", "Linux", "Nginx", "GitHub Actions", "Vercel", "DirectAdmin"]
+  },
+  {
+    "category": "Tools",
+    "items": ["Git", "Figma", "VS Code", "Postman", "Cursor"]
+  }
+]

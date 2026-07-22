@@ -1,0 +1,22 @@
+[
+  {
+    "id": "lemburin",
+    "slug": "lemburin",
+    "title": "Lemburin",
+    "category": "Web App",
+    "description": "A comprehensive task management and overtime tracking system for enterprise teams.",
+    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+    "image": "/images/projects/lemburin.png",
+    "demoUrl": "https://lemburin.example.com"
+  },
+  {
+    "id": "sb-digital",
+    "slug": "sb-digital",
+    "title": "SB Digital",
+    "category": "Company Profile",
+    "description": "Modern company profile for a digital agency.",
+    "techStack": ["React", "Tailwind CSS", "Framer Motion"],
+    "image": "/images/projects/sb-digital.png",
+    "demoUrl": "https://sbdigital.example.com"
+  }
+]
