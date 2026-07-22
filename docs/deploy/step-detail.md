@@ -80,6 +80,7 @@ Website Portofolio Anda kini sudah berhasil *Live*!
 ---
 
 ### Solusi Masalah Umum (Troubleshooting)
-- **Error 500 saat Login Admin atau Contact Form:** Terjadi karena Prisma gagal terhubung ke Database atau Prisma Client tidak di-*generate* ulang di server. Ulangi perintah `npx prisma generate` lalu **Restart** aplikasi.
+- **Error 500 saat Login Admin atau Contact Form:** Terjadi karena Prisma gagal terhubung ke Database atau Prisma Client tidak di-*generate* ulang di server. Ulangi perintah `npx prisma@5 generate` lalu **Restart** aplikasi.
 - **Tampilan CSS Berantakan:** Cache lama belum terhapus. Cobalah merestart kembali Node App atau buka situs menggunakan mode *Incognito/Private*.
 - **"Application Startup File Error":** Pastikan file `server.js` benar-benar berada di direktori *root* (sejajar dengan `package.json`). File tersebut wajib ada karena DirectAdmin/Passenger memerlukan *entry point* kustom selain Next.js standar.
+- **Error "TurbopackInternalError: Symlink [project]/node_modules is invalid":** Lingkungan CloudLinux menggunakan *symlink* untuk `node_modules` yang ditolak oleh Turbopack Next.js 15. Pastikan perintah build di `package.json` telah diubah menjadi `"build": "next build --webpack"` untuk mematikan Turbopack.
