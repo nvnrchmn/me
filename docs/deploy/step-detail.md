@@ -57,11 +57,11 @@ Setelah aplikasi berhasil dibuat, DirectAdmin akan menampilkan perintah berlatar
    ```
 5. Jalankan sinkronisasi database Prisma:
    ```bash
-   npx prisma db push
+   npx prisma@5 db push
    ```
 6. Bangkitkan Prisma Client (Penting agar tidak terjadi error 500):
    ```bash
-   npx prisma generate
+   npx prisma@5 generate
    ```
 7. Terakhir, lakukan Build Next.js:
    ```bash
