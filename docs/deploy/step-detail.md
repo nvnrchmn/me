@@ -53,7 +53,7 @@ Setelah aplikasi berhasil dibuat, DirectAdmin akan menampilkan perintah berlatar
 3. **Tempel (*Paste*) dan tekan Enter**. (Tampilan terminal akan berubah menandakan Anda sudah di dalam virtual env).
 4. Jalankan perintah instalasi paket:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 5. Jalankan sinkronisasi database Prisma:
    ```bash
